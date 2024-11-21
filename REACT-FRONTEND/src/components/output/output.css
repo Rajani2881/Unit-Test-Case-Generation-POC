@@ -1,0 +1,88 @@
+/* Output Section Styles */
+
+.output-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #dbedf1;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 1100px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.output-textarea {
+  background-color: #f7d8f2;
+  color: #041204;
+  font-size: 14px;
+  padding: 15px;
+  resize: none;
+  border: 2px solid #ff79c6;
+  border-radius: 8px;
+  min-height: 950px;
+  width: 95%;
+  font-family: 'JetBrains Mono', monospace;
+  outline: none;
+}
+
+.output-button {
+  background-color: #ff79c6;
+  padding: 20px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 15%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.output-button:hover {
+  background-color: #ff6b6b;
+}
+
+/* Copy Button Styles */
+.copy-button {
+  background-color: #9cacf9;
+  font-size: 25px;
+  padding: 12px;
+  border-radius: 8px;
+  color: #212121;
+  cursor: pointer;
+  width: 100px;
+  align-self: flex-start;
+  border: none;
+  box-shadow: 0 4px 10px rgba(148, 224, 241, 0.2);
+}
+
+.copy-button:hover {
+  background-color: #e485eb;
+}
+
+.copy-button:active {
+  background-color: #38c974;
+}
+
+/* Loading and Result Message Styles */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #ffcc00;
+}
+
+/* Responsive Styles for Output Section */
+@media (max-width: 768px) {
+  .output-section {
+      width: 100%;
+  }
+
+  .output-textarea {
+      width: 100%;
+  }
+
+  .copy-button {
+      width: 200px;
+  }
+}
+
+   

@@ -1,0 +1,116 @@
+
+/* General Styles for Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #bfe0ef, #e6aaeb);
+  border-radius: 12px;
+  border: 1px solid #f06292;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  min-height: 1100px;
+  color: rgb(32, 10, 10);
+}
+
+/* Textarea for Code Input */
+.textarea-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-textarea {
+  background-color: #fff3e6;
+  color: #333;
+  font-size: 20px;
+  height: 500px;
+  resize: none;
+  border: 2px solid #f06292;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  width: 95%;
+  outline: none;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #f63434;
+  font-size: 25px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Form Container (Test Cases and Language Selection) */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ff79c6;
+  background-color: #fff3e6;
+}
+
+.input-group input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.small-input {
+  width: 30%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ff79c6;
+  background-color: #fff3e6;
+}
+
+/* Language Radio Buttons */
+.input-group h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #041204;
+}
+
+.input-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .input-section {
+      flex-direction: column;
+  }
+
+  .code-textarea {
+      width: 100%;
+      height: 300px;
+  }
+
+  .form-container {
+      width: 100%;
+  }
+
+  .input-group input {
+      width: 100%;
+  }
+
+  .small-input {
+      width: 100%;
+  }
+}
